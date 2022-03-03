@@ -83,6 +83,7 @@ function editarProduto(){
         idCategoria: categoriaEdi.value
     }).done(function (data) {
         // Redirecionar para a página do sistema:
+       //console.log(data);
         if (data.status == 1) {
             swal("Sucesso!", data.mensagem, 'success');
             // Esconder a modal:
